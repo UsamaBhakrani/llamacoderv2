@@ -1,0 +1,11 @@
+<script>start("c:\\Users\\DR-3\\Desktop\\HTML\\Nextjs\\llamacoder\\.next\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("cache","cache",1,0,"0 B",1736507094,"1/10/25, 4:04:54 PM");</script>
+<script>addRow("server","server",1,0,"0 B",1736508470,"1/10/25, 4:27:50 PM");</script>
+<script>addRow("static","static",1,0,"0 B",1736508475,"1/10/25, 4:27:55 PM");</script>
+<script>addRow("types","types",1,0,"0 B",1736508470,"1/10/25, 4:27:50 PM");</script>
+<script>addRow("app-build-manifest.json","app-build-manifest.json",0,600,"600 B",1736508892,"1/10/25, 4:34:52 PM");</script>
+<script>addRow("build-manifest.json","build-manifest.json",0,388,"388 B",1736508892,"1/10/25, 4:34:52 PM");</script>
+<script>addRow("package.json","package.json",0,20,"20 B",1736508465,"1/10/25, 4:27:45 PM");</script>
+<script>addRow("react-loadable-manifest.json","react-loadable-manifest.json",0,504,"504 B",1736508892,"1/10/25, 4:34:52 PM");</script>
+<script>addRow("trace","trace",0,145140,"142 kB",1736509199,"1/10/25, 4:39:59 PM");</script>
