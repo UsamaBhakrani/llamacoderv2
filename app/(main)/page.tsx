@@ -2,16 +2,13 @@
 "use client";
 
 import Fieldset from "@/components/fieldset";
-import ArrowRightIcon from "@/components/icons/arrow-right";
 import LightningBoltIcon from "@/components/icons/lightning-bolt";
-import LoadingButton from "@/components/loading-button";
 import Spinner from "@/components/spinner";
 import bgImg from "@/public/halo.png";
 import * as Select from "@radix-ui/react-select";
 import assert from "assert";
-import { CheckIcon, ChevronDownIcon } from "lucide-react";
+import { CheckIcon, ChevronDownIcon, Upload } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { use, useState, useRef, useTransition } from "react";
 import TextareaAutosize from "react-textarea-autosize";
@@ -19,7 +16,6 @@ import { createChat, getNextCompletionStreamPromise } from "./actions";
 import { Context } from "./providers";
 import Header from "@/components/header";
 import { useS3Upload } from "next-s3-upload";
-import UploadIcon from "@/components/icons/upload-icon";
 import { XCircleIcon } from "@heroicons/react/20/solid";
 import { MODELS, SUGGESTED_PROMPTS } from "@/lib/constants";
 
@@ -66,7 +62,7 @@ export default function Home() {
 
         <div className="mt-10 flex grow flex-col items-center px-4 lg:mt-16">
           <h1 className="mt-4 text-balance text-center text-xl leading-none text-black md:text-[38px] lg:mt-8">
-            What Can I Help You With?
+            How can i assist you?
           </h1>
 
           <form
@@ -249,8 +245,8 @@ export default function Home() {
                       htmlFor="screenshot"
                       className="flex cursor-pointer gap-2 text-sm text-gray-400 hover:underline"
                     >
-                      <div className="flex size-6 items-center justify-center rounded bg-black hover:bg-gray-700">
-                        <UploadIcon className="size-4" />
+                      <div className="flex size-6 items-center justify-center rounded bg-transparent hover:bg-gray-100">
+                        <Upload className="size-4" />
                       </div>
                       <div className="flex items-center justify-center transition hover:text-gray-700">
                         Attach
