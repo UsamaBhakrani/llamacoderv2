@@ -131,7 +131,7 @@ export default function Home() {
                     </div>
                   )}
                   <TextareaAutosize
-                    placeholder="Build me a budgeting app..."
+                    placeholder="How can i assist you?"
                     required
                     name="prompt"
                     rows={1}
