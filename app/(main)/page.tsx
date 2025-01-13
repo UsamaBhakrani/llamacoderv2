@@ -62,7 +62,7 @@ export default function Home() {
 
         <div className="mt-10 flex grow flex-col items-center px-4 lg:mt-16">
           <h1 className="mt-4 text-balance text-center text-xl leading-none text-black md:text-[38px] lg:mt-8">
-            How can i assist you?
+            What can I help you with?
           </h1>
 
           <form
