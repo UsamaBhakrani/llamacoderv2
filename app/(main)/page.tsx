@@ -65,9 +65,8 @@ export default function Home() {
         <Header />
 
         <div className="mt-10 flex grow flex-col items-center px-4 lg:mt-16">
-       
           <h1 className="mt-4 text-balance text-center text-xl leading-none text-black md:text-[38px] lg:mt-8">
-           What Can I Help You With? 
+            What Can I Help You With?
           </h1>
 
           <form
@@ -153,9 +152,9 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-between">
-                  <div className="flex items-center gap-3">   
-                  <Select.Root
+                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-end">
+                  <div className="hidden items-center gap-3">
+                    <Select.Root
                       name="model"
                       value={model}
                       onValueChange={setModel}
@@ -243,40 +242,40 @@ export default function Home() {
                         </Select.Content>
                       </Select.Portal>
                     </Select.Root>
-                    <div className="h-4 w-px bg-gray-200 max-sm:hidden" />                
-                    <div>
-                      <label
-                        htmlFor="screenshot"
-                        className="flex cursor-pointer gap-2 text-sm text-gray-400 hover:underline"
-                      >
-                        <div className="flex size-6 items-center justify-center rounded bg-black hover:bg-gray-700">
-                          <UploadIcon className="size-4" />
-                        </div>
-                        <div className="flex items-center justify-center transition hover:text-gray-700">
-                          Attach
-                        </div>
-                      </label>
-                      <input
-                        // name="screenshot"
-                        id="screenshot"
-                        type="file"
-                        accept="image/png, image/jpeg, image/webp"
-                        onChange={handleScreenshotUpload}
-                        className="hidden"
-                        ref={fileInputRef}
-                      />
-                    </div>
+                  </div>
+                  <div className="flex h-4 w-px items-center justify-end bg-gray-200 max-sm:hidden" />
+                  <div>
+                    <label
+                      htmlFor="screenshot"
+                      className="flex cursor-pointer gap-2 text-sm text-gray-400 hover:underline"
+                    >
+                      <div className="flex size-6 items-center justify-center rounded bg-black hover:bg-gray-700">
+                        <UploadIcon className="size-4" />
+                      </div>
+                      <div className="flex items-center justify-center transition hover:text-gray-700">
+                        Attach
+                      </div>
+                    </label>
+                    <input
+                      // name="screenshot"
+                      id="screenshot"
+                      type="file"
+                      accept="image/png, image/jpeg, image/webp"
+                      onChange={handleScreenshotUpload}
+                      className="hidden"
+                      ref={fileInputRef}
+                    />
                   </div>
 
                   <div className="relative flex shrink-0 has-[:disabled]:opacity-50">
                     <div className="pointer-events-none absolute inset-0 -bottom-[1px] rounded bg-blue-500" />
 
-                    <LoadingButton
+                    {/* <LoadingButton
                       className="relative inline-flex size-6 items-center justify-center rounded bg-blue-500 font-medium text-white shadow-lg outline-blue-300 hover:bg-blue-500/75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       type="submit"
                     >
                       <ArrowRightIcon />
-                    </LoadingButton>
+                    </LoadingButton> */}
                   </div>
                 </div>
 
@@ -303,9 +302,7 @@ export default function Home() {
           </form>
         </div>
 
-        <footer className="flex w-full flex-col items-center justify-between space-y-3 px-3 pb-3 pt-5 text-center sm:flex-row sm:pt-2">
-          
-        </footer>
+        <footer className="flex w-full flex-col items-center justify-between space-y-3 px-3 pb-3 pt-5 text-center sm:flex-row sm:pt-2"></footer>
       </div>
     </div>
   );
