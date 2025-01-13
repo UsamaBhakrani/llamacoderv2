@@ -95,7 +95,7 @@ export default function PageClient({ chat }: { chat: Chat }) {
         <div className="mx-auto flex w-full shrink-0 flex-col overflow-hidden lg:w-1/2">
           <div className="flex items-center gap-4 px-4 py-4">
             <Link href="/">
-              <LogoSmall />
+              <LogoSmall />   {"add some toggle for the side bar here"}
             </Link>
             <p className="italic text-gray-500">{chat.title}</p>
           </div>
