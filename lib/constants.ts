@@ -57,35 +57,28 @@ export const MODELS = [
 
 export const SUGGESTED_PROMPTS = [
   {
-    
-    title: "Smart Calculator with Interactive Explanations",
+    title: "Smart Calculator",
     description:
-      "Build a calculator that not only performs basic arithmetic operations but also explains how it arrived at the result. For example, if the user inputs 2 + 3 4, it explains the order of operations (BODMAS) and shows the steps: first multiplying 3 4, then adding 2. Include advanced features like scientific calculations (e.g., trigonometry, logarithms), a unit converter, and a graphing function for equations. Make it user-friendly with a clean, responsive interface, and ensure it provides tooltips for less common functions."
-
+      "Build a calculator that not only performs basic arithmetic operations but also explains how it arrived at the result. For example, if the user inputs 2 + 3 4, it explains the order of operations (BODMAS) and shows the steps: first multiplying 3 4, then adding 2. Include advanced features like scientific calculations (e.g., trigonometry, logarithms), a unit converter, and a graphing function for equations. Make it user-friendly with a clean, responsive interface, and ensure it provides tooltips for less common functions.",
   },
   {
     title: "AI-Powered Recipe Generator",
     description:
-      "Create a recipe generator that takes user-inputted ingredients and dietary preferences to suggest recipes. For instance, if the user types 'chicken, rice, broccoli' and selects 'low-carb,' the app generates a healthy recipe. Integrate an AI model to provide cooking instructions step-by-step, offer substitution suggestions for unavailable ingredients, and include an estimated cooking time and nutritional breakdown for each recipe. Add a feature to save or share recipes and rate them after trying."
-
+      "Create a recipe generator that takes user-inputted ingredients and dietary preferences to suggest recipes. For instance, if the user types 'chicken, rice, broccoli' and selects 'low-carb,' the app generates a healthy recipe. Integrate an AI model to provide cooking instructions step-by-step, offer substitution suggestions for unavailable ingredients, and include an estimated cooking time and nutritional breakdown for each recipe. Add a feature to save or share recipes and rate them after trying.",
   },
-  {
-    title: "Dynamic Budget Tracker and Advisor",
-    description:
-      "Develop a financial tracker where users can input their income, expenses, and savings goals. The app dynamically calculates their remaining budget and provides advice on optimizing spending. For example, if a user overspends in one category (e.g., dining out), it suggests adjustments in other areas or ways to save. Include graphs for spending trends, reminders for bill payments, and customizable alerts for exceeding budgets. Add a 'What-If' tool to simulate changes in spending habits and their impact on long-term savings."
-
-  },
+  // {
+  //   title: "Dynamic Budget Tracker and Advisor",
+  //   description:
+  //     "Develop a financial tracker where users can input their income, expenses, and savings goals. The app dynamically calculates their remaining budget and provides advice on optimizing spending. For example, if a user overspends in one category (e.g., dining out), it suggests adjustments in other areas or ways to save. Include graphs for spending trends, reminders for bill payments, and customizable alerts for exceeding budgets. Add a 'What-If' tool to simulate changes in spending habits and their impact on long-term savings.",
+  // },
   {
     title: "Personalized Workout Planner",
     description:
-      "Build a fitness app that creates tailored workout plans based on a user's goals, fitness level, and available equipment. For instance, if a user wants to build muscle and only has dumbbells, the app generates a weekly strength training plan with detailed exercise descriptions, videos, and tracking features. Integrate AI to adapt the plan based on user progress and feedback. Include motivational features like progress visualizations, achievements, and reminders to ensure adherence."
-
+      "Build a fitness app that creates tailored workout plans based on a user's goals, fitness level, and available equipment. For instance, if a user wants to build muscle and only has dumbbells, the app generates a weekly strength training plan with detailed exercise descriptions, videos, and tracking features. Integrate AI to adapt the plan based on user progress and feedback. Include motivational features like progress visualizations, achievements, and reminders to ensure adherence.",
   },
   {
-
     title: "AI Travel Itinerary Planner",
     description:
-      "Design an app that helps users plan trips by generating detailed itineraries based on their destination, interests, and travel dates. For example, if a user selects 'Paris' and specifies interests in art and food, the app creates a daily schedule with museum visits, local food tours, and dining recommendations. Include features for budget estimation, real-time weather updates, and local transportation options. Add a collaborative mode for group travel planning, allowing multiple users to contribute to the itinerary."
+      "Design an app that helps users plan trips by generating detailed itineraries based on their destination, interests, and travel dates. For example, if a user selects 'Paris' and specifies interests in art and food, the app creates a daily schedule with museum visits, local food tours, and dining recommendations. Include features for budget estimation, real-time weather updates, and local transportation options. Add a collaborative mode for group travel planning, allowing multiple users to contribute to the itinerary.",
   },
-
 ];
