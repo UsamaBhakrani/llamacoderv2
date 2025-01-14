@@ -18,6 +18,8 @@ import Header from "@/components/header";
 import { useS3Upload } from "next-s3-upload";
 import { XCircleIcon } from "@heroicons/react/20/solid";
 import { MODELS, SUGGESTED_PROMPTS } from "@/lib/constants";
+import LoadingButton from "@/components/loading-button";
+import ArrowRightIcon from "@/components/icons/arrow-right";
 
 export default function Home() {
   const { setStreamPromise } = use(Context);
@@ -131,7 +133,7 @@ export default function Home() {
                     </div>
                   )}
                   <TextareaAutosize
-                    placeholder="How can i assist you?"
+                    placeholder="How can I assist you?"
                     required
                     name="prompt"
                     rows={1}
@@ -148,7 +150,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-end">
+                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-end gap-x-2">
                   <div className="hidden items-center gap-3">
                     <Select.Root
                       name="model"
@@ -266,12 +268,12 @@ export default function Home() {
                   <div className="relative flex shrink-0 has-[:disabled]:opacity-50">
                     <div className="pointer-events-none absolute inset-0 -bottom-[1px] rounded bg-blue-500" />
 
-                    {/* <LoadingButton
+                    <LoadingButton
                       className="relative inline-flex size-6 items-center justify-center rounded bg-blue-500 font-medium text-white shadow-lg outline-blue-300 hover:bg-blue-500/75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       type="submit"
                     >
                       <ArrowRightIcon />
-                    </LoadingButton> */}
+                    </LoadingButton>
                   </div>
                 </div>
 
