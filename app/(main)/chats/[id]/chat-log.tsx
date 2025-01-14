@@ -107,11 +107,15 @@ function AssistantMessage({
           ) : message ? (
             <div className="my-4">
               <button
-                className={`${isActive ? "bg-white" : "bg-gray-300 hover:border-gray-400 hover:bg-gray-400"} inline-flex w-full items-center gap-2 rounded-lg border-4 border-gray-300 p-1.5`}
+                className={`${isActive ? "bg-white" : "bg-gray-100  hover:bg-gray-200"} inline-flex w-full items-center gap-2 rounded-lg border-1 p-1.5`}
+                style={{
+                  borderImage: "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
+                  boxShadow: "0 0 5px rgba(67, 105, 224, 0.7), 0 0 5px rgba(67, 105, 224, 0.7), 0 0 10px rgba(7, 11, 134, 0.6)",
+                }}
                 onClick={() => onMessageClick(message)}
               >
                 <div
-                  className={`${isActive ? "bg-gray-300" : "bg-gray-200"} flex size-8 items-center justify-center rounded font-bold`}
+                  className={`${isActive ? "bg-gray-100" : "bg-gray-50"} flex size-8 items-center justify-center rounded font-bold`}
                 >
                   V{version}
                 </div>

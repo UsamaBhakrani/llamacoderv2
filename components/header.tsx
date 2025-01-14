@@ -12,7 +12,7 @@ export default function Header() {
           src={logo}
           alt=""
           quality={100}
-          className="mx-auto h-9 object-contain"
+          className="mt-14 mx-auto h-9 object-contain"
           priority
         />
       </Link>

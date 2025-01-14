@@ -65,7 +65,7 @@ export default function CodeViewer({
 
   return (
     <>
-      <div className="flex h-16 shrink-0 items-center justify-between border-b border-gray-300 px-4">
+      <div className="flex h-16 shrink-0 items-center justify-between rounded-lg border-t border-blue-600 px-4">
         <div className="inline-flex items-center gap-4">
           <button
             className="text-gray-400 hover:text-gray-700"
@@ -135,7 +135,7 @@ export default function CodeViewer({
         </div>
       )}
 
-      <div className="flex items-center justify-between border-t border-gray-300 px-4 py-4">
+      <div className="flex items-center justify-between border-b border-blue-500 rounded-lg px-4 py-4">
         <div className="inline-flex items-center gap-2.5 text-sm">
           <Share message={message && !streamApp ? message : undefined} />
           <button

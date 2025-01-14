@@ -4,7 +4,7 @@ import { IoIosChatbubbles, IoIosMore } from "react-icons/io";
 import { AiOutlinePlus, AiOutlineDelete, AiOutlineEdit, AiOutlineFolderOpen } from "react-icons/ai";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import logo from "@/public/gptLogo.jpg";
+import logo from "@/public/gptLogoWhite.jpg";
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,9 +49,15 @@ export default function Sidebar() {
             </button>
 
             <div
-                className={`fixed top-0 bottom-0 left-0 z-10 transform duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} w-[277px] overflow-y-auto text-left bg-gradient-to-b from-white via-gray-50 to-gray-100 shadow-lg border-r border-gray-300 h-screen`}
-            >
-                <div className="p-4 border-b bg-gray-100 border-gray-300">
+                className={`fixed top-0 bottom-0 left-0 z-10 transform duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} w-[277px] overflow-y-auto text-left bg-white border h-screen border-r-2 border-grey-200`}
+                 
+            > 
+                <div className="p-4 bg-white"
+                // style={{
+                //     borderImage: "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
+                //     boxShadow: "0 0 2px rgba(67, 105, 224, 0.7), 0 0 2px rgba(67, 105, 224, 0.7), 0 0 2px rgba(7, 11, 134, 0.6)",
+                //   }}
+                >
                     <div className="flex justify-between items-center">
                         <div className="flex items-center">
                             <Image
@@ -72,8 +78,8 @@ export default function Sidebar() {
                 </div>
 
                 {/* Header Section */}
-                <div className="px-2 py-[4px]">
-                    <div className="flex items-center bg-gray-100  rounded-md px-3 py-2 border border-gray-300 transition-all duration-200">
+                <div className="px-2 py-[10px]">
+                    <div className="flex items-center bg-white  rounded-md px-3 py-2 border border-blue-200 transition-all duration-200">
                         <h1 className="text-lg text-grey-800 font-bold">Chats</h1>
                         <button className="ml-auto border border-grey-900 hover:border-black text-grey-800 text-xs flex items-center space-x-1 p-2 rounded-md">
                             <AiOutlinePlus />
@@ -85,7 +91,7 @@ export default function Sidebar() {
 
                 {/* Search Bar */}
                 <div className="px-2 py-[7px]">
-                    <div className="flex items-center bg-gray-50 rounded-md px-3 py-2 border border-gray-300 hover:bg-gray-100 transition-all duration-200">
+                    <div className="flex items-center bg-white rounded-md px-3 py-2 border border-blue-200 hover:bg-gray-100 transition-all duration-200">
                         <FiSearch className="text-gray-500" />
                         <input
                             className="ml-3 w-full bg-transparent focus:outline-none text-gray-700"
@@ -99,10 +105,10 @@ export default function Sidebar() {
                     {chats.map((chat, index) => (
                         <div
                             key={index}
-                            className="p-3 mb-3 rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-300 shadow-sm"
+                            className="p-3 mb-3 rounded-lg bg-white hover:bg-gray-100 border border-blue-200 shadow-sm"
                         >
                             <h2 className="text-gray-800 text-xs font-semibold border-b-2 border-gray-200 pb-1">{chat.title}</h2>
-                            <ul className="mt-2 text-gray-600 text-sm">
+                            <ul className="mt-2 text-gray-800 text-sm">
                                 {chat.messages.map((msg, idx) => (
                                     <li key={idx} className="py-2 flex justify-between items-center group relative">
                                         <div className="flex items-center space-x-2">

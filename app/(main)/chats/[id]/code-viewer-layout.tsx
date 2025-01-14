@@ -41,7 +41,7 @@ export default function CodeViewerLayout({
           className={`${isShowing ? "w-1/2" : "w-0"} hidden h-full overflow-hidden py-5 transition-[width] lg:block`}
         >
           <div className="ml-4 flex h-full flex-col rounded-l-xl shadow-lg shadow-gray-400/40">
-            <div className="flex h-full flex-col rounded-l-xl shadow shadow-gray-800/50">
+            <div className="flex h-full flex-col rounded-l-xl border-l border-blue-500">
               {children}
             </div>
           </div>

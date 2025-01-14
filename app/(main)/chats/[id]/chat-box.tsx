@@ -56,7 +56,11 @@ export default function ChatBox({
         }}
       >
         <fieldset className="w-full" disabled={disabled}>
-          <div className="relative flex rounded-lg border-4 border-gray-300 bg-white">
+        <div className="relative flex rounded-lg border-1 bg-white"
+          style={{
+            borderImage: "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
+            boxShadow: "0 0 5px rgba(67, 105, 224, 0.7), 0 0 5px rgba(67, 105, 224, 0.7), 0 0 10px rgba(7, 11, 134, 0.6)",
+          }}>
             <TextareaAutosize
               ref={textareaRef}
               placeholder="Follow up"
