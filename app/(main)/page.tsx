@@ -19,6 +19,8 @@ import { useS3Upload } from "next-s3-upload";
 import { XCircleIcon } from "@heroicons/react/20/solid";
 import { MODELS, SUGGESTED_PROMPTS } from "@/lib/constants";
 import "../globals.css";
+import LoadingButton from "@/components/loading-button";
+import ArrowRightIcon from "@/components/icons/arrow-right";
 
 export default function Home() {
   const { setStreamPromise } = use(Context);
@@ -48,8 +50,8 @@ export default function Home() {
   };
 
   return (
-    <div className="relative flex grow flex-col h-screen">
-      <div className="absolute inset-0 flex justify-center bg-blue-50 h=screen">
+    <div className="relative flex h-screen grow flex-col">
+      <div className="h=screen absolute inset-0 flex justify-center bg-blue-50">
         <Image
           src={bgImg}
           alt=""
@@ -95,10 +97,12 @@ export default function Home() {
           >
             <Fieldset>
               <div
-                className="relative flex rounded-xl border-1 bg-white pb-10"
+                className="border-1 relative flex rounded-xl bg-white pb-10"
                 style={{
-                  borderImage: "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
-                  boxShadow: "0 0 5px rgba(67, 105, 224, 0.7), 0 0 5px rgba(67, 105, 224, 0.7), 0 0 10px rgba(7, 11, 134, 0.6)",
+                  borderImage:
+                    "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
+                  boxShadow:
+                    "0 0 5px rgba(67, 105, 224, 0.7), 0 0 5px rgba(67, 105, 224, 0.7), 0 0 10px rgba(7, 11, 134, 0.6)",
                 }}
               >
                 <div className="w-full">
@@ -155,7 +159,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-end">
+                <div className="absolute bottom-2 left-2 right-2.5 flex items-center justify-end gap-x-2">
                   <div className="hidden items-center gap-3">
                     <Select.Root
                       name="model"
@@ -255,7 +259,7 @@ export default function Home() {
                       <div className="flex size-6 items-center justify-center rounded hover:bg-gray-100">
                         <Upload className="size-4" />
                       </div>
-                      <div className="flex items-center justify-center transition text-gray-600 hover:text-gray-700">
+                      <div className="flex items-center justify-center text-gray-600 transition hover:text-gray-700">
                         Attach
                       </div>
                     </label>
@@ -272,13 +276,12 @@ export default function Home() {
 
                   <div className="relative flex shrink-0 has-[:disabled]:opacity-50">
                     <div className="pointer-events-none absolute inset-0 -bottom-[1px] rounded bg-blue-500" />
-
-                    {/* <LoadingButton
+                    <LoadingButton
                       className="relative inline-flex size-6 items-center justify-center rounded bg-blue-500 font-medium text-white shadow-lg outline-blue-300 hover:bg-blue-500/75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       type="submit"
                     >
                       <ArrowRightIcon />
-                    </LoadingButton> */}
+                    </LoadingButton>
                   </div>
                 </div>
 
@@ -295,10 +298,12 @@ export default function Home() {
                     key={v.title}
                     type="button"
                     onClick={() => setPrompt(v.description)}
-                    className="rounded bg-white px-2.5 py-1.5 text-xs hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-300 border-1"
+                    className="border-1 rounded bg-white px-2.5 py-1.5 text-xs hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
                     style={{
-                      borderImage: "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
-                      boxShadow: "0 0 2px rgba(67, 105, 224, 0.7), 0 0 2px rgba(67, 105, 224, 0.7), 0 0 5px rgba(7, 11, 134, 0.6)",
+                      borderImage:
+                        "linear-gradient(90deg, rgba(7,11,134,1) 31%, rgba(67,105,224,1) 59%) 1",
+                      boxShadow:
+                        "0 0 2px rgba(67, 105, 224, 0.7), 0 0 2px rgba(67, 105, 224, 0.7), 0 0 5px rgba(7, 11, 134, 0.6)",
                     }}
                   >
                     {v.title}
