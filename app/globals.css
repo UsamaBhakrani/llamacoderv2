@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: "Aeonik";
-  src: url("/Aeonik/Aeonik-Regular.ttf");
+  src: url("/Aeonik/IBMPlexSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Aeonik";
-  src: url("/Aeonik/Aeonik-Medium.ttf");
+  src: url("/Aeonik/IBMPlexSans-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Aeonik";
-  src: url("/Aeonik/Aeonik-Bold.ttf");
+  src: url("/Aeonik/IBMPlexSans-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Aeonik Mono";
-  src: url("/Aeonik/AeonikMono-Regular.otf");
+  src: url("/Aeonik/IBMPlexSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }

@@ -47,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative flex grow flex-col">
+    <div className="relative flex grow flex-col ">
       <div className="absolute inset-0 flex justify-center">
         <Image
           src={bgImg}

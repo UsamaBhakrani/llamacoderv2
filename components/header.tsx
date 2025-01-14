@@ -18,7 +18,7 @@ export default function Header() {
       </Link>
 
       <div className="absolute right-3">
-     
+
       </div>
     </header>
   );
