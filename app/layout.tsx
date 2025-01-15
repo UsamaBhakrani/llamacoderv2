@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
-import { Roboto, Poppins, Roboto_Mono } from "next/font/google";
 import { IBM_Plex_Sans } from "next/font/google";
 import clsx from "clsx";
 
@@ -11,21 +10,6 @@ let url = "https://llamacoder.io/";
 let ogimage = "https://llamacoder.io/og-image.png";
 let sitename = "llamacoder.io";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-roboto",
-});
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: "600",
-  variable: "--font-poppins",
-});
-const roboto_mono = Roboto_Mono({
-  subsets: ["latin"],
-  weight: "700",
-  variable: "--font-mono",
-});
 const roboto = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: "400",
