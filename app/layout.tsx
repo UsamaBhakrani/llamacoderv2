@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
-import {IBM_Plex_Sans} from 'next/font/google'
+import { Roboto, Poppins, Roboto_Mono } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import clsx from "clsx";
 
 let title = "Llama Coder – AI Code Generator";
@@ -10,9 +11,36 @@ let url = "https://llamacoder.io/";
 let ogimage = "https://llamacoder.io/og-image.png";
 let sitename = "llamacoder.io";
 
-const roboto = IBM_Plex_Sans({ subsets: ['latin'],weight:'400',variable:'--font-roboto' });
-const poppins = IBM_Plex_Sans({ subsets: ['latin'],weight:'600',variable:'--font-poppins' });
-const roboto_mono = IBM_Plex_Sans({ subsets: ['latin'],weight:'700',variable:'--font-mono' });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-roboto",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "600",
+  variable: "--font-poppins",
+});
+const roboto_mono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-mono",
+});
+const roboto = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-roboto",
+});
+const poppins = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: "600",
+  variable: "--font-poppins",
+});
+const roboto_mono = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -38,15 +66,16 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={clsx('w-full',`${poppins.className}${roboto_mono.className}`)}>
+    <html
+      lang="en"
+      className={clsx("w-full", `${poppins.className}${roboto_mono.className}`)}
+    >
       <head>
         <PlausibleProvider domain="llamacoder.io" />
       </head>
