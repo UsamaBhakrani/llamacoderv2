@@ -56,10 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={clsx("w-full", `${poppins.className}${roboto_mono.className}`)}
-    >
+    <html lang="en" className={clsx("w-full")}>
       <head>
         <PlausibleProvider domain="llamacoder.io" />
       </head>
